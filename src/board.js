@@ -14,22 +14,7 @@ class Board extends React.Component {
     this.nextId = this.nextId.bind(this);
   }
 
-  componentWillMount() {
-    var self = this;
-    if (this.props.count) {
-      fetch(
-        `https://baconipsum.com/api/?type=all-meat&sentences=${
-          this.props.count
-        }`
-      )
-        .then(responses => responses.json())
-        .then(json =>
-          json[0]
-            .split(". ")
-            .forEach(sentence => self.add(sentence.substring(0, 25)))
-        );
-    }
-  }
+
   update(newText, i) {
     this.setState(prevstate => ({
       notes: prevstate.notes.map(note =>

@@ -8,4 +8,6 @@ import "./styles.css";
 import Board from "./board";
 
 const rootElement = document.getElementById("root");
-ReactDOM.render(<Board count={50} />, rootElement);
+ReactDOM.render(<Board />, rootElement);
+
+// deployment test
