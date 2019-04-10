@@ -1,4 +1,4 @@
 # Notes
 A notes making app made using React.
 
-Click [here](https://9pzowrx8y.codesandbox.io/) for preview.
+Click [here](https://csb-9pzowrx8y.netlify.com) for preview.
